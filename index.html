@@ -3,20 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IFOOD EXPRESS– Pedidos online</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Sabor da Praça – Pedidos online</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style (1).css">
 </head>
 <body>
 
   <header class="topo">
     <div class="container topo__linha">
-      <a class="marca" href="#inicio"><span class="marca__logo" aria-hidden="true">🥟</span>IFOOD EXPRESS</a>
+      <a class="marca" href="#inicio">🥟 IFOOD EXPRESS</a>
       <nav class="menu" aria-label="Principal">
-        <a href="#cardapio">Cardápio</a>
+        <a href="catalogo.html">Catálogo</a>
         <a href="#como-funciona">Como funciona</a>
-        <a class="botao botao--pequeno" href="#cardapio">Fazer pedido</a>
+        
       </nav>
     </div>
   </header>
@@ -26,9 +25,9 @@
     <section class="hero">
       <div class="container hero__grade">
         <div class="hero__texto">
-          <h1>Bateu a fome? Peça aqui e retire.</h1>
-          <p>Escolha os itens do cardápio, confira o total antes de fechar e envie seu pedido sem filas e sem ligação de maneira simples e rápida.</p>
-          <a class="botao botao--claro" href="#cardapio">Ver cardápio</a>
+          <h1>Fome? Peça aqui e retire quentinho.</h1>
+          <p>Escolha os itens do cardápio, confira o total antes de fechar e envie seu pedido sem filas e sem ligação.</p>
+          <a class="botao" href="catalogo.html">Ver cardápio</a>
         </div>
 
         <div class="comanda" aria-label="Exemplo de pedido">
@@ -59,44 +58,45 @@
 
         <ul class="cardapio">
           <li class="prato">
-            <span class="prato__icone" aria-hidden="true"><img src="image/coxinha.webp" alt="Coxinha de frango" width="50" height="50"></span>
+            <span class="prato__icone"><img src="image/coxinha.webp" alt="Coxinha de frango" width="50" height="60"></span>
             <div class="prato__info"><h3>Coxinha de frango</h3><p>Massa crocante e recheio cremoso com catupiry.</p></div>
             <span class="prato__preco">R$ 7,50</span>
           </li>
           <li class="prato">
-            <span class="prato__icone" aria-hidden="true"><img src="image/Best-Burger-5.jpg" alt="X-Burger da Praça" width="50" height="50"></span>
+            <span class="prato__icone"><img src="image/burger.jpg" alt="X-Burger da Praça" width="50" height="60"></span>
             <div class="prato__info"><h3>X-Burger da Praça</h3><p>Pão macio, hambúrguer 150 g, queijo e salada.</p></div>
             <span class="prato__preco">R$ 22,00</span>
           </li>
           <li class="prato">
-            <span class="prato__icone" aria-hidden="true"><img src="image/boloderolo.webp" alt="Bolo de rolo (fatia)" width="50" height="50"></span>
+            <span class="prato__icone"><img src="image/boloderolo.webp" alt="Bolo de rolo (fatia)" width="50" height="60"></span>
             <div class="prato__info"><h3>Bolo de rolo (fatia)</h3><p>Receita pernambucana com goiabada.</p></div>
             <span class="prato__preco">R$ 10,00</span>
           </li>
           <li class="prato">
-            <span class="prato__icone" aria-hidden="true"><img src="image/coco.webp" alt="Água de coco" width="50" height="50"></span>
+            <span class="prato__icone"><img src="image/coco.webp" alt="Água de coco" width="50" height="60"></span>
             <div class="prato__info"><h3>Água de coco</h3><p>Gelada, direto do coco.</p></div>
             <span class="prato__preco">R$ 7,00</span>
           </li>
           <li class="prato">
-            <span class="prato__icone" aria-hidden="true"><img src="image/pastel.webp" alt="Pastel de queijo" width="50" height="50"></span>
+            <span class="prato__icone"><img src="image/pastel.webp" alt="Pastel de queijo" width="50" height="60"></span>
             <div class="prato__info"><h3>Pastel de queijo</h3><p>Frito na hora, com queijo coalho derretido.</p></div>
             <span class="prato__preco">R$ 8,00</span>
           </li>
           <li class="prato">
-            <span class="prato__icone" aria-hidden="true"><img src="image/OIP.webp" alt="" width="50" height="50"></span>
+            <span class="prato__icone"><img src="image/OIP.webp" alt="Pudim de leite" width="50" height="60"></span>
             <div class="prato__info"><h3>Pudim de leite</h3><p>Cremoso, com calda de caramelo.</p></div>
             <span class="prato__preco">R$ 9,00</span>
           </li>
         </ul>
+        <p class="ver-mais"><a class="botao" href="catalogo.html">Ver catálogo completo</a></p>
       </div>
     </section>
 
     <section class="secao secao--cinza" id="como-funciona">
       <div class="container">
-        <h2>Como funciona?</h2>
+        <h2>Como funciona</h2>
         <ol class="passos">
-          <li><strong>Escolha de acordo com suas preferências</strong><span>Navegue pelas categorias e veja preço e descrição de cada item.</span></li>
+          <li><strong>Escolha</strong><span>Navegue pelas categorias e veja preço e descrição de cada item.</span></li>
           <li><strong>Monte o carrinho</strong><span>Ajuste as quantidades e acompanhe o total.</span></li>
           <li><strong>Envie o pedido</strong><span>Preencha seus dados e confirme.</span></li>
         </ol>
@@ -106,7 +106,7 @@
   </main>
 
   <footer class="rodape">
-    <div class="container">© 2026 IFOOD EXPRESS · Projeto de pedidos online.</div>
+    <div class="container">© 2026 IFOOD EXPRESS · Projeto de pedidos online</div>
   </footer>
 
 </body>
