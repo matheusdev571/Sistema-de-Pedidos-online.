@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo – IFOOD EXPRESS</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/carrinho.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container topo__linha">
+      <a class="marca" href="index.html">🥟 IFOOD EXPRESS</a>
+      <nav class="menu">
+        <a href="index.html">Início</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="#carrinho">Carrinho</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="titulo-pagina">
+      <div class="container">
+        <h1>Catálogo de produtos</h1>
+        <p>Escolha uma categoria para ir direto aos itens.</p>
+      </div>
+    </section>
+
+    <div class="container">
+
+      <nav class="categorias">
+        <a href="#salgados">Salgados</a>
+        <a href="#lanches">Lanches</a>
+        <a href="#doces">Doces</a>
+        <a href="#bebidas">Bebidas</a>
+      </nav>
+
+      <section class="secao" id="salgados">
+        <h2>Salgados</h2>
+        <div class="catalogo">
+          <article class="produto">
+            <div class="produto__imagem"><img src="image/coxinha.webp" alt="Coxinha de frango" width="150" height="80"></div>
+            <h3>Coxinha de frango</h3>
+            <p>Massa crocante e recheio cremoso com catupiry.</p>
+            <div class="produto__compra">
+              <span class="produto__preco">R$ 7,50</span>
+              <button type="button" class="adicionar" onclick="adicionar('Coxinha de frango', 7.5)">Adicionar</button>
+            </div>
+          </article>
+          <article class="produto">
+            <div class="produto__imagem"><img src="image/pastel.webp" alt="Pastel de queijo" width="150" height="80"></div>
+            <h3>Pastel de queijo</h3>
+            <p>Frito na hora, com queijo coalho derretido.</p>
+            <div class="produto__compra">
+              <span class="produto__preco">R$ 8,00</span>
+              <button type="button" class="adicionar" onclick="adicionar('Pastel de queijo', 8.0)">Adicionar</button>
+            </div>
+          </article>
+          <article class="produto">
+            <div class="produto__imagem"><img src="image/empada.jpg" alt="Empada de camarão" width="150" height="80"></div>
+            <h3>Empada de camarão</h3>
+            <p>Massa amanteigada e recheio temperado.</p>
+            <div class="produto__compra">
+              <span class="produto__preco">R$ 9,00</span>
+              <button type="button" class="adicionar" onclick="adicionar('Empada de camarão', 9.0)">Adicionar</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="secao" id="lanches">
+        <h2>Lanches</h2>
+        <div class="catalogo">
+          <article class="produto">
+            <div class="produto__imagem"><img src="image/burger.jpg" alt="X-Burger da Praça" width="150" height="80"></div>
+            <h3>X-Burger da Praça</h3>
+            <p>Pão macio, hambúrguer 150 g, queijo e salada.</p>
+            <div class="produto__compra">
+              <span class="produto__preco">R$ 22,00</span>
+              <button type="button" class="adicionar" onclick="adicionar('X-Burger da Praça', 22.0)">Adicionar</button>
+            </div>
+          </article>
+          <article class="produto">
+            <div class="produto__imagem"><img src="image/sanduiche.webp" alt="Sanduíche natural" width="150" height="80"></div>
+            <h3>Sanduíche natural</h3>
+            <p>Frango desfiado, cenoura ralada e alface.</p>
+            <div class="produto__compra">
+              <span class="produto__preco">R$ 14,00</span>
+              <button type="button" class="adicionar" onclick="adicionar('Sanduíche natural', 14.0)">Adicionar</button>
+            </div>
+          </article>
+          <article class="produto">
+            <div class="produto__imagem"><img src="image/cachorro.webp" alt="Cachorro-quente" width="150" height="80"></div>
+            <h3>Cachorro-quente</h3>
+            <p>Duas salsichas, purê, vinagrete e batata palha.</p>
+            <div class="produto__compra">
+              <span class="produto__preco">R$ 16,00</span>
+              <button type="button" class="adicionar" onclick="adicionar('Cachorro-quente', 16.0)">Adicionar</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="secao" id="doces">
+        <h2>Doces</h2>
+        <div class="catalogo">
+          <article class="produto">
+            <div class="produto__imagem"><img src="image/boloderolo.webp" alt="Bolo de rolo (fatia)" width="150" height="80"></div>
+            <h3>Bolo de rolo (fatia)</h3>
+            <p>Receita pernambucana com goiabada.</p>
+            <div class="produto__compra">
+              <span class="produto__preco">R$ 10,00</span>
+              <button type="button" class="adicionar" onclick="adicionar('Bolo de rolo (fatia)', 10.0)">Adicionar</button>
+            </div>
+          </article>
+          <article class="produto">
+            <div class="produto__imagem"><img src="image/briga.webp" alt="Brigadeiro gourmet" width="150" height="80"></div>
+            <h3>Brigadeiro gourmet</h3>
+            <p>Chocolate belga com granulado crocante.</p>
+            <div class="produto__compra">
+              <span class="produto__preco">R$ 5,00</span>
+              <button type="button" class="adicionar" onclick="adicionar('Brigadeiro gourmet', 5.0)">Adicionar</button>
+            </div>
+          </article>
+          <article class="produto">
+            <div class="produto__imagem"><img src="image/OIP.webp" alt="Pudim de leite" width="150" height="80"></div>
+            <h3>Pudim de leite</h3>
+            <p>Cremoso, com calda de caramelo.</p>
+            <div class="produto__compra">
+              <span class="produto__preco">R$ 9,00</span>
+              <button type="button" class="adicionar" onclick="adicionar('Pudim de leite', 9.0)">Adicionar</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="secao" id="bebidas">
+        <h2>Bebidas</h2>
+        <div class="catalogo">
+          <article class="produto">
+            <div class="produto__imagem"><img src="image/caju.jpg" alt="Suco de caju 400 ml" width="150" height="80"></div>
+            <h3>Suco de caju 400 ml</h3>
+            <p>Feito com a fruta, sem conservantes.</p>
+            <div class="produto__compra">
+              <span class="produto__preco">R$ 8,00</span>
+              <button type="button" class="adicionar" onclick="adicionar('Suco de caju 400 ml', 8.0)">Adicionar</button>
+            </div>
+          </article>
+          <article class="produto">
+            <div class="produto__imagem"><img src="image/coco.webp" alt="Água de coco" width="150" height="80"></div>
+            <h3>Água de coco</h3>
+            <p>Gelada, direto do coco.</p>
+            <div class="produto__compra">
+              <span class="produto__preco">R$ 7,00</span>
+              <button type="button" class="adicionar" onclick="adicionar('Água de coco', 7.0)">Adicionar</button>
+            </div>
+          </article>
+          <article class="produto">
+            <div class="produto__imagem"><img src="image/refri.webp" alt="Refrigerante lata" width="150" height="80"></div>
+            <h3>Refrigerante lata</h3>
+            <p>Guaraná ou cola, 350 ml.</p>
+            <div class="produto__compra">
+              <span class="produto__preco">R$ 6,00</span>
+              <button type="button" class="adicionar" onclick="adicionar('Refrigerante lata', 6.0)">Adicionar</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </div>
+
+  <section class="carrinho" id="carrinho">
+    <div class="container">
+
+      <div id="area-pedido">
+        <h2>Seu carrinho</h2>
+        <div id="lista"></div>
+        <p class="total">Total: <span id="total">R$ 0,00</span></p>
+
+        <h2>Dados do pedido</h2>
+        <form onsubmit="confirmar(event)">
+          <label>Nome completo
+            <input type="text" id="nome" required>
+          </label>
+          <label>Endereço de entrega
+            <input type="text" id="endereco" required placeholder="Rua, número e bairro">
+          </label>
+          <label>Forma de pagamento
+            <select id="pagamento">
+              <option>Pix</option>
+              <option>Cartão na entrega</option>
+              <option>Dinheiro</option>
+            </select>
+          </label>
+          <button class="botao" type="submit">Confirmar pedido</button>
+        </form>
+      </div>
+
+      <div class="confirmacao" id="confirmacao" hidden>
+        <h2>✅ Pedido confirmado!</h2>
+        <p>Obrigado, <b id="conf-nome"></b>! Seu pedido será entregue em <span id="conf-endereco"></span>. Pagamento: <span id="conf-pagamento"></span>.</p>
+        <div id="conf-resumo"></div>
+        <p>pedido finalizado.</p>
+        <a class="botao" href="catalogo.html">Fazer novo pedido</a>
+      </div>
+
+    </div>
+  </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">© 2026 IFOOD EXPRESS · Implementação de pedidos online</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
